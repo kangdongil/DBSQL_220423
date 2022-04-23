@@ -15,6 +15,12 @@
 * DML는 `DB안 data를 어떻게 다룰 것인가?`에 대한 내용이다
 * SQL 데이터 형식은 크게 `'문자'`와 `숫자`가 있다
 
+## KEY
+- PK(Primary KEY): 기본키
+  - 결코 중복되지 않는 식별을 위한 고유한 키
+  - 모든 TABLE은 무결성을 위해 pk를 가진다
+- FK(Foreign KEY)
+
 ## INSERT INTO 문: 데이터 추가하기
 - `INSERT INTO TABLE(FIELD1, FIELD2, ...) VALUES (VALUE1, VALUE2, ...)`
 - `FIELD`와 `VALUE`의 개수가 일치해야 한다
