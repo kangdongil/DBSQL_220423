@@ -13,15 +13,28 @@
 
 * DDL과 DCL은 DBMS에서 기본적으로 지원한다
 * DML는 `DB안 data를 어떻게 다룰 것인가?`에 대한 내용이다
+* SQL 데이터 형식은 크게 `'문자'`와 `숫자`가 있다
 
-## INSERT INTO ~문: 데이터 추가하기
+## INSERT INTO 문: 데이터 추가하기
 - `INSERT INTO TABLE(FIELD1, FIELD2, ...) VALUES (VALUE1, VALUE2, ...)`
 - `FIELD`와 `VALUE`의 개수가 일치해야 한다
 
-## INSERT문 실습하기: 
+### INSERT문 실습하기: 
 ```
 USE [DB명]
 
 SELECT * FROM [TABLE명]
 INSERT INTO [TABLE명]([필드명1], [필드명2], ...) VALUES([값1], [값2], ...)
+```
+
+## UPDATE SET 문: 데이터 수정하기
+- `UPDATE TABLE SET FIELD1=VALUE1, FIELD2=VALUE2, ...`
+- `WHERE`절과 같이 조건 설정이 반드시 필요하다
+
+### UPDATE문 실습하기:
+```
+ USE [DB명]
+ 
+ SELECT * FROM [TABLE명]
+ UPDATE [TABLE명] SET [필드명]=[값] WHERE [필드명]=[값]
 ```
